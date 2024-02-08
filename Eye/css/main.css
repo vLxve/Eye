@@ -4,7 +4,7 @@
     position: absolute;
     top: 50%;
     left: 50%;
-    color: gray; /* Your default color */
+    color: #3c575767; /* Your default color */
     transition: color 0.3s ease;
     text-shadow: 0 0 8px rgba(0, 0, 0, 0.5);
     transform: translate(-50%, -50%);
@@ -18,9 +18,12 @@
 .eye-options {
     position: absolute;
     content: "\F33E";
-    top: calc(50% + 3vh);
-    left: 50%;
+    top: calc(44.8% + 3vh);
+    left: 57%; /* Adjust the left value as needed */
     transform: translateX(-50%);
+    display: flex;
+    flex-direction: column; /* Display options in a column */
+    align-items: flex-start; /* Align options to the start (left side) */
 }
 
 .eye-options > .option {
@@ -33,17 +36,21 @@
     background-color: gray;
     margin-bottom: 0.6vh;
     text-shadow: -0.1vh -0.1vh 0 rgba(0, 0, 0, 0.5), 0.1vh -0.1vh 0 rgba(0, 0, 0, 0.5), -0.1vh 0.1vh 0 rgba(0, 0, 0, 0.5), 0.1vh 0.1vh 0 rgba(0, 0, 0, 0.5);
-    display: block;
-    transition: opacity 0.6s ease;
+    transition: opacity 0.5s ease;
+    left: 90%; /* Adjust the left value for spacing between options */
+    left: 0; /* Reset left to stack options in a column */
+    margin-left: 0; /* Reset margin-left for the first option */
+    display: block; /* Display options as block elements */
+    position: relative;
 }
 
 .eye-options > .option:hover {
-    color: #1ccccc;
+    color: #08f7c5;
     transform: scale(1.05);
 }
 
 .eye-options > .option > i {
-    color: #1ccccc;
+    color: #08f7c5;
 }
 
 #hex::before {
@@ -56,11 +63,11 @@
     font-size: 6vh;
     z-index: 1;
 
-      text-shadow: #1ccccc00 0px 0 20px;
-      -webkit-text-stroke: 1.5px gray;
+      text-shadow: #3c575767 0px 0 20px;
+      -webkit-text-stroke: 1.5px #3c575767;
 }
 
 #hex.active-text-shadow::before {
-    text-shadow: #1ccccc 0px 0 20px;
-    -webkit-text-stroke: 1.5px #1ccccc;
+    text-shadow: #08f7c5 0px 0 20px;
+    -webkit-text-stroke: 1.5px #08f7c5;
 }
