@@ -19,11 +19,11 @@
     position: absolute;
     content: "\F33E";
     top: calc(44.8% + 3vh);
-    left: 57%; /* Adjust the left value as needed */
+    left: 57%;
     transform: translateX(-50%);
     display: flex;
-    flex-direction: column; /* Display options in a column */
-    align-items: flex-start; /* Align options to the start (left side) */
+    flex-direction: column;
+    align-items: flex-start;
 }
 
 .eye-options > .option {
@@ -37,10 +37,10 @@
     margin-bottom: 0.6vh;
     text-shadow: -0.1vh -0.1vh 0 rgba(0, 0, 0, 0.5), 0.1vh -0.1vh 0 rgba(0, 0, 0, 0.5), -0.1vh 0.1vh 0 rgba(0, 0, 0, 0.5), 0.1vh 0.1vh 0 rgba(0, 0, 0, 0.5);
     transition: opacity 0.5s ease;
-    left: 90%; /* Adjust the left value for spacing between options */
-    left: 0; /* Reset left to stack options in a column */
-    margin-left: 0; /* Reset margin-left for the first option */
-    display: block; /* Display options as block elements */
+    left: 90%;
+    left: 0;
+    margin-left: 0;
+    display: block;
     position: relative;
 }
 
