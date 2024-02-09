@@ -82,7 +82,7 @@ Eye.addNuiListener('SetOptions', (Data) => {
 $(document).on('click', '.eye-options .option', function(e){
     e.preventDefault();
     if (InEye) {
-        $.post("https://mercy-ui/Eye/Click", JSON.stringify({
+        $.post("https://vlxve-ui/Eye/Click", JSON.stringify({
             Parent: $(this).attr("data-parent"),
             Name: $(this).attr("data-name"),
         }));
@@ -94,7 +94,7 @@ $(document).keyup(function(e){
 
     switch (e.keyCode) {
         case 27:
-            $.post("https://mercy-ui/Eye/Close");
+            $.post("https://vlxve-ui/Eye/Close");
             break;
     }
 });
@@ -103,6 +103,6 @@ window.addEventListener("mousedown", function onEvent(event) {
     if (!InEye) return;
 
     if (event.button == 2) {
-        $.post("https://mercy-ui/Eye/Unfocus");
+        $.post("https://vlxve-ui/Eye/Unfocus");
     }
 });
