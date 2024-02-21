@@ -6,4 +6,4 @@ This is a third eye for the Mercy framework
 
 # Preview
 
-https://imgur.com/a/xiokBzb
+<img src="https://imgur.com/a/xiokBzb" title="preview">
